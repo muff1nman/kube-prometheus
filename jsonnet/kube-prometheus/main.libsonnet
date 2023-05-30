@@ -39,7 +39,7 @@ local utils = import './lib/utils.libsonnet';
       images: {
         alertmanager: 'quay.io/prometheus/alertmanager:v' + $.values.common.versions.alertmanager,
         blackboxExporter: 'quay.io/prometheus/blackbox-exporter:v' + $.values.common.versions.blackboxExporter,
-        grafana: 'grafana/grafana:' + $.values.common.versions.grafana,
+        grafana: 'docker.io/grafana/grafana:' + $.values.common.versions.grafana,
         kubeStateMetrics: 'registry.k8s.io/kube-state-metrics/kube-state-metrics:v' + $.values.common.versions.kubeStateMetrics,
         nodeExporter: 'quay.io/prometheus/node-exporter:v' + $.values.common.versions.nodeExporter,
         prometheus: 'quay.io/prometheus/prometheus:v' + $.values.common.versions.prometheus,
@@ -47,7 +47,7 @@ local utils = import './lib/utils.libsonnet';
         prometheusOperator: 'quay.io/prometheus-operator/prometheus-operator:v' + $.values.common.versions.prometheusOperator,
         prometheusOperatorReloader: 'quay.io/prometheus-operator/prometheus-config-reloader:v' + $.values.common.versions.prometheusOperator,
         kubeRbacProxy: 'quay.io/brancz/kube-rbac-proxy:v' + $.values.common.versions.kubeRbacProxy,
-        configmapReload: 'jimmidyson/configmap-reload:v' + $.values.common.versions.configmapReload,
+        configmapReload: 'docker.io/jimmidyson/configmap-reload:v' + $.values.common.versions.configmapReload,
       },
     },
     alertmanager: {
